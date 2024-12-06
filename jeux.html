@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="cs.css">
+</head>
+<body>
+	
+	<img class="fond" src="Jeu-bg.jpeg" />
+
+<button class="chapitre">CHAPITRE 1 DESERTIQUE</button>
+<div id="Fabrication">FABRICATION</div>	
+<div id="fab">
+		<button id="fab-habitacle"class="BtnFab">HABITACLE DE SURVIE</button>
+		<button id="fab-torche" class="BtnFab">TORCHE</button>
+		<button id="fab-foreuse"class="BtnFab">FOREUSE T1</button>
+		<button id="fab-radiateur"class="BtnFab">RADIATEUR</button>
+		<button id="fab-plantation"class="BtnFab">PLANTATION</button>
+		<button id="craft-water"class="BtnFab">EAU</button>
+		<button id="craft-oxygen"class="BtnFab">BONBONNE O2</button>
+</div> 
+
+<div id="consomations">
+	<div id="Consom">CONSOMMATION</div> 
+	<button id="consume-water" type="button" class="BtnCons" >EAU</button>
+	<button id="consume-oxygen" type="button" class="BtnCons">BONBONNE O2</button>
+	<button id="eat-food" type="button" class="BtnCons" >MANGER</button>
+</div>
+
+<div id= "se-deplacer">
+   <button id="deplacer">SE DEPLACER</button>
+   <span id="countdown"> 0</span>
+    
+</div>  
+
+	<button id="retour">RETOUR</button>
+  <div id="timer">Temps de jeu : 0 secondes</div>
+
+<div id="caracteristiques">
+  <div class="caracteristique">
+    <div>
+    	<img id="coeur" src="health.png">
+    </div>
+    <div class="caracteristique-info">
+      <div class="health"></div>
+      <div class="jauge">
+        <div class="jaugevaleur" id="health-jauge"></div>
+      </div>
+      <div class="health-value" id="health"></div>
+    </div>
+  </div>
+  <div class="caracteristique">
+    <div>
+    		<img id ="goutte" src="goutte.png">
+   	</div>
+    <div class="caracteristique-info">
+      <div class="hydration"></div>
+      <div class="jauge">
+        <div class="jaugevaleur" id="hydration-jauge"></div>
+      </div>
+      <div class="hydration-value" id="hydration"></div>
+    </div>
+  </div>
+  <div class="caracteristique">
+    <div> 
+    	<img class="o2" src="O2.png">
+    </div>
+    <div class="caracteristique-info">
+      <div class="oxygen"></div>
+      <div class="jauge">
+        <div class="jaugevaleur" id="oxygen-jauge"></div>
+      </div>
+      <div class="oxygen-value" id="oxygen"></div>
+    </div>
+  </div>
+</div>
+
+<div class="resources">
+    <div class="resource-item">
+      <div class="resource-name">GLACE</div>
+      <img class="resource-image" src="Glace.png" alt="Glace" onclick="collectResource('glace')">
+    </div>
+    <div class="resource-item">
+      <div class="resource-name">FER</div>
+      <img class="resource-image" src="Fer.png" alt="Fer" onclick="collectResource('fer')">
+    </div>
+    <div class="resource-item">
+      <div class="resource-name">MAGNESIUM</div>
+      <img class="resource-image" src="Magnesium.png" alt="Magnésium" onclick="collectResource('magnesium')">
+    </div>
+    <div class="resource-item">
+      <div class="resource-name">SILICIUM</div>
+      <img class="resource-image" src="Silicium.png" alt="Silicium" onclick="collectResource('silicium')">
+    </div>
+    <div class="resource-item">
+      <div class="resource-name">TITANE</div>
+      <img class="resource-image" src="Titane.png" alt="Titane" onclick="collectResource('titane')">
+    </div>
+    <div class="resource-item">
+      <div class="resource-name">COBALT</div>
+      <img class="resource-image" src="Cobalt.png" alt="Cobalt" onclick="collectResource('cobalt')">
+    </div>
+	<div class="resource-item">
+		<div class="resource-name">GRAINE</div>
+		<img class="resource-image" src="Graine.png" alt="Graine" onclick="collectGrass('graine')">
+	  </div>
+  </div>
+	
+	<div id="stock-table">
+		<h2></h2>
+		<table id="stock">
+		  <tr>
+
+		  </tr>
+		</table>
+	  </div>
+
+ <div id="habitacle">
+  <img id ="habitacle-image" src="Habit.png" >
+</div>
+	
+	<script src="jav.js"></script>
+</body>
+</html>
